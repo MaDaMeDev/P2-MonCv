@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * { 
-    margin: 0 ;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -22,7 +22,6 @@ aside {
    
 }
 main {
-    border: 4px solid yellow;
     width: 70%;
 }
 
@@ -41,7 +40,7 @@ main {
 
  .asideText p
  {
-    padding: 10px;
+    padding: 10px 20px;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 0.05em;
@@ -57,7 +56,7 @@ img {
     display: block;
     width: 195px;
     border-radius: 50%;
-    margin-top: 56px ;
+    margin: 55px auto;
 }
 
 /* ----------------contact---------------------------------------------------- */
@@ -69,11 +68,17 @@ img {
 /* ---------------about-------------------------------- */
 
 .about {
-    height: 800px;
+    height: 750px;
+}
+
+.hobbies {
+    height: 180px;
 }
 
 .hobbies .icones {
-    margin:50px auto;
+    display: flex;
+    justify-content: space-around;
+    margin:30px
 }
 
 .hobbies i {
@@ -81,7 +86,7 @@ img {
     border-radius: 100%;
     padding: 10px;
     background-color: white;
-    margin: 20px;
+    
     
 }
 
@@ -115,8 +120,8 @@ h2 span {
 
 /* -------------------------article--------------------------------------- */
 main article {
-    border: 4px solid gray;
-    padding:50px 20px;
+    padding:50px 30px;
+    width: 90%;
 }
 
 .sectionTitle {
@@ -125,13 +130,17 @@ main article {
     padding: 10px;
   
 }
+
+hr {
+    border: 1px solid #FBCADB; ;
+}
+
 .sectionTitle i {
     font-size: 40px;
     
 }
 /* ------------------------section---------------------------------------- */
 main section {
-    border: 4px solid blue;
     display: flex;
     padding-top: 40px;
 
@@ -148,21 +157,19 @@ li {
 
 
 .dates {
-    border: hotpink 4px solid;
     width: 40%;
-    
-
- 
+  
+  
 }
 .dates i {
-    padding-right: 20px;
-    font-size: 13px;
+  margin-right: 10px;
+  width: 15px;
+
     color:#FBCADB ;
     
 }
 /* --------------------------details------------------------------------- */
 .detail {
-    border: black 4px solid;
     width: 60%;
     
 }
@@ -219,14 +226,15 @@ letter-spacing: 0.05em;
 
 {
   
+   
     body{
+       
         background-color: inherit;
-        width: 100%;
     }
     .container {
-        width: 100%;
-        display: flex;
+        
         flex-direction: column;
+        width: auto;
     }
     aside {
         width: 100%;
@@ -235,73 +243,77 @@ letter-spacing: 0.05em;
 
     .about {
         height: 250px;
-    }
-    
-    .hobbies .icones {
-        margin:10 auto ;
-        display: flex;
-        justify-content: space-around
-    }
-    
-    .hobbies i {
-        margin:10px;
-       
+
     }
 
+    .about p {
+        text-align: justify;
+
+        width: 80%; 
+    }
     
     main {
+        
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 main header {
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
-main article {
-    margin: auto;
+.sectionTitle {
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px; 
+    text-align: center;
+  
 }
+
+hr {
+    border: 1px solid #FBCADB;
+    position: relative;
+    width: 40%;  
+}
+.sectionTitle i {
+    font-size: 40px;  
+}
+/* ------------------------section---------------------------------------- */
 
 
 main section {
     flex-direction: column;
-    margin: 50px 0;
-}
-
-
-
-.dates i {
-    padding: 30px;
    
 }
+.dates {
+    width: 100%;
+    text-align: center;
+}
+
 
 .detail {
-    width: 100%;
-    margin:  auto;
-     
+    border: 4px solid black;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;   
+}
+.detail p {
+    margin-top:20px;
+    line-height: 20px;
 }
 
-.names {
-    flex-direction: column;
-}
 
 .names ul {
     margin: 50px ;
 }
 
-.recommendations {
-    width:100% ;
-    height: 360px;
-   
-}
+
 
 /* ------------titre----------------- */
     
-.sectionTitle {
-    font-weight: 500;
-    font-size: 20px;
-}
+
 
 }
 
