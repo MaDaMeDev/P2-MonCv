@@ -73,14 +73,15 @@ img {
 .hobbies .icones {
     display: flex;
     justify-content: space-around;
-    margin:30px
+    margin:30px;
 }
 
 .hobbies i {
     border: 2px solid black;
-    border-radius: 100%;
-    padding: 10px;
-    background-color: white; 
+    border-radius: 50%;
+    padding: 15px;
+    background-color: white;
+    font-size: 30px;
 }
 
 /* ---------------------------------------------------------------------------------main---------------------------------------------------------------------------------- */
@@ -189,7 +190,7 @@ li {
     margin: 50px 100px 50px 0;
 }
 
-/* ---------------------------------------------------------------------------------------------Responsive--------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------Responsive--------------------------------------------------------------- */
 
 @media all and (max-width: 1024px){ 
     body{
@@ -223,7 +224,7 @@ li {
     main header {
         margin: 30px auto;
     }
-
+    
     main section {
         flex-direction: column;
     }
