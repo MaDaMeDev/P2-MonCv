@@ -164,8 +164,7 @@ li {
 }
 
 .dates i {
-    margin-right: 10px;
-    width: 15px;
+    padding-right: 20px;
     color:#FBCADB ;   
 }
 /* --------------------------details------------------------------------- */
