@@ -13,7 +13,6 @@ body{
 .container {
     width: 1024px;
     display: flex;
-
     background-color: white;
     box-shadow: 10px 10px 5px grey;
     border-left:1px solid grey;
@@ -53,7 +52,7 @@ a {
 }
  
  .asideText {
-   margin-top: 20px;
+   margin: 20px 10px;
    text-align: center; 
 }
 
@@ -214,6 +213,8 @@ li {
         background-color: inherit;
     }
     .container {
+        margin: 0;
+        padding: 0;
         flex-direction: column;
         width: auto;
         box-shadow: none;
@@ -233,10 +234,13 @@ li {
     }
 
     .about {
-        height: 250px;
+        height: auto;
+        min-height: 250px;
+        
     }
 
     .about p {
+        padding: 20px;
         text-align: justify;
         width: 80%; 
     }
@@ -289,6 +293,10 @@ li {
     .detail p {
         margin-top:20px;
         line-height: 20px;
+    }
+
+    .names {
+        flex-direction: column;
     }
 
     .names ul {
