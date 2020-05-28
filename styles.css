@@ -75,7 +75,7 @@ img {
 }
 
 .contact {
-    height: 340px;
+    height: auto;
 }
 
 .about {
@@ -261,9 +261,7 @@ li {
     }
 
     .sectionTitle {
-        font-weight: 500;
-        font-size: 24px;
-        padding: 10px; 
+        font-size: 20px;
         text-align: center;
     
     }
