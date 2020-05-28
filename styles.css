@@ -9,12 +9,13 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: black;
 }
 .container {
     width: 1024px;
     display: flex;
     background-color: white;
+    box-shadow: 10px 10px 5px grey;
+    border-left:1px solid grey;
 }
 
 aside {
@@ -204,6 +205,7 @@ li {
     .container {
         flex-direction: column;
         width: auto;
+        box-shadow: none;
     }
     /* -----------------------------------Aside------------------------------------- */
     aside {
