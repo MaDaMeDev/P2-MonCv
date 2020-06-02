@@ -109,10 +109,12 @@ header h1 {
 h1 span {
     font-weight: bold;
     color: #FBCADB ;
+    
 }
 
 h2 {
 font-weight: 500;
+line-height: 36px;
 }
 
 h2 span {
