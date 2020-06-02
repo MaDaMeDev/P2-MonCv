@@ -14,21 +14,12 @@ body{
     width: 1024px;
     display: flex;
     background-color: white;
-    box-shadow: 10px 10px 5px grey;
-    border-left:1px solid grey;
+    box-shadow: 2px 2px 4px grey;
 }
 
 aside {
     background-color: #FBCADB;
     width: 30%;
-}
-
-header {
-    display: block;
-    
-}
-.responsive {
-    display:none ;
 }
 
 main {
@@ -102,10 +93,11 @@ img {
 
 /* ---------------------------------------------------------------------------------main---------------------------------------------------------------------------------- */
 
-/* ---------------------------header--------------------------------- */
-
 main header {
     margin: 80px 0 60px 70px;
+}
+main figure {
+    display: none;   
 }
 
 header h1 {
@@ -158,7 +150,6 @@ li {
    list-style: none;
 }
 
-/* ------------------------date---------------------------------------- */
 .dates {
     width: 40%; 
 }
@@ -167,7 +158,7 @@ li {
     padding-right: 20px;
     color:#FBCADB ;   
 }
-/* --------------------------details------------------------------------- */
+
 .detail {
     width: 60%; 
 }
@@ -194,7 +185,7 @@ li {
 /* ---------------------------Recommandations---------------------------------- */
 
 .recommendations {
-   height: 250px;
+  min-height: 250px;
 }
 
 .names {
@@ -218,51 +209,46 @@ li {
         width: auto;
         box-shadow: none;
     }
-/* ---------------------------------Header---------------------------------------- */
-    .responsive {
-        display:block ; 
-        padding: 30px;
-    }
-      
-    header  {
-        display: none;
-    }
-    /* -----------------------------------Aside------------------------------------- */
+
     aside {
         width: 100%;
+        order: 1;
     }
 
-    .about {
-        height: auto;
-        min-height: 250px;
-        
+    aside figure {
+        display: none;
     }
-
-    .about p {
-        padding: 20px;
-        text-align: justify;
-        width: 80%; 
-    }
-
-    /* -----------------------------------Main------------------------------------ */
+    
+    
     main {  
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        width: 100%;  
     }
 
     main header {
-        margin: 30px auto;
+        margin: 30px;
+        text-align: center;
+    }
+    .responsive {
+        display: block;
+        width: 100%;
+        background-color: #FBCADB;
+        
     }
     
     main section {
         flex-direction: column;
+        
+    }
+    main article {
+        padding:30px 30px;
     }
 
     .sectionTitle {
         font-size: 20px;
         text-align: center;
-    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     hr {
@@ -272,7 +258,8 @@ li {
     }
 
     .sectionTitle i {
-        font-size: 40px;  
+        font-size: 40px; 
+        padding: 10px;
     }
 
     .dates {
@@ -297,8 +284,19 @@ li {
     }
 
     .names ul {
-        margin: 50px ;
+        margin: 50px auto ;
     }
+    
+    .about {
+        height: auto;
+    }
+
+    .about p {
+        padding: 20px;
+        text-align: justify;
+        width: 80%; 
+    }  
+    
 }
 
 
